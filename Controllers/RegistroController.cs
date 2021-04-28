@@ -12,11 +12,11 @@ namespace PC2_Progra.Controllers
         [HttpPost]
         public IActionResult Registro(Usuario u){
             if (ModelState.IsValid){
-                return RedirectToAction("Actualizar");
+                return RedirectToAction("Registrados");
             }
             return View();
         }
-        public IActionResult Actualizar(){
+        public IActionResult Registrados(){
             return View();
         }
     }
